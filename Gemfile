@@ -15,6 +15,8 @@ gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
 gem 'carrierwave'
+gem 'fog-aws'
+gem 'figaro'
 gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
@@ -55,6 +57,7 @@ end
 group :production do
   gem 'pg'
   gem 'rails_12factor'
+  gem 'aws-sdk', '~> 2.3'
 end
 
 
